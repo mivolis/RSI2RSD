@@ -9,7 +9,8 @@ import matplotlib.pyplot as plt
 from c4 import atomic_json, DOMAINS, filehash
 
 
-def report(root, verify=False):
+def report(root, verify=False, verify_only=False):
+    assert not verify_only or verify
     root=Path(root);out=root/'report';out.mkdir(exist_ok=True)
     arms={};rows=[];updates=[]
     for cfg in sorted(root.glob('gamma*/config.json')):
@@ -53,6 +54,10 @@ def report(root, verify=False):
             updates.extend(dict(arm=name,**z) for z in logs)
         assert len({b['block'] for b in blocks})==len(blocks)
         arms[name]=(config,blocks,local)
+    if verify_only:
+        print(json.dumps(dict(status='verified',blocks=len(rows),batches=len(updates),
+                              report_files_unchanged=True)),flush=True)
+        return
     atomic_json(out/'blocks.json',rows)
     with (out/'updates.jsonl').open('w') as f:
         for row in updates:f.write(json.dumps(row,allow_nan=False)+'\n')
@@ -170,4 +175,5 @@ def report(root, verify=False):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('root');p.add_argument('--verify',action='store_true')
-    a=p.parse_args();report(a.root,a.verify)
+    p.add_argument('--verify-only',action='store_true',help='validate without rewriting retained report artifacts')
+    a=p.parse_args();report(a.root,a.verify or a.verify_only,a.verify_only)

@@ -71,7 +71,7 @@ def supervise(contract):
             # Workers have stopped writing. A final transfer includes stdout tail and completion markers.
             final=sync()
             if final.returncode:continue
-            verify=subprocess.run([sys.executable,str(dest/'report.py'),str(dest/'results'),'--verify'],
+            verify=subprocess.run([sys.executable,str(Path(__file__).with_name('report.py')),str(dest/'results'),'--verify-only'],
                                   capture_output=True,text=True,timeout=600)
             (root/'retrieval_verification.log').write_text(verify.stdout+'\n'+verify.stderr)
             if verify.returncode:
@@ -93,7 +93,7 @@ def supervise(contract):
             atomic_json(root/'teardown_evidence.json',dict(instance_id=instance,
                 verified_files=len(hashes),worker_exits=outcome,arms=statuses,
                 time_unix=time.time(),data_not_retrieved='public CIFAR-100-C; checksum and source retained'))
-            result=subprocess.run([cli,'destroy','instance',instance,'--raw'],capture_output=True,text=True,timeout=90)
+            result=subprocess.run([cli,'destroy','instance',instance,'--yes','--raw'],capture_output=True,text=True,timeout=90)
             (root/'teardown_response.txt').write_text(result.stdout+'\n'+result.stderr)
             check=subprocess.run([cli,'show','instances','--raw'],capture_output=True,text=True,timeout=60)
             try: active=json.loads(check.stdout);gone=all(str(i['id'])!=instance for i in active)

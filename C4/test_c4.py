@@ -157,6 +157,9 @@ class Contracts(unittest.TestCase):
             self.assertEqual(len(list(out.glob('block_*/attempt_*/complete.json'))),4)
             report.report(out.parent,verify=True)
             self.assertEqual(len(list((out.parent/'report').glob('C4-*.png'))),5)
+            retained={p.name:c4.filehash(p) for p in (out.parent/'report').iterdir() if p.is_file()}
+            report.report(out.parent,verify=True,verify_only=True)
+            self.assertEqual(retained,{p.name:c4.filehash(p) for p in (out.parent/'report').iterdir() if p.is_file()})
             import json
             for summary in out.glob('block_*/attempt_*/summary.json'):
                 self.assertEqual(json.loads(summary.read_text())['optimizer_steps'],2)
