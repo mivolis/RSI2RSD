@@ -6,7 +6,8 @@ two natural corruption cycles. Sapelo job 48416583 completed with exit 0;
 all six host-specific fork verifications passed. All required Vast records
 were recovered and hash-verified before the paid instance was destroyed.
 The full Sapelo mirror and both complete raw archives are now hash-verified;
-large GitHub release uploads remain in progress;
+the Vast raw release is published with all 15 displayed asset hashes matched,
+while the Sapelo raw release upload remains in progress;
 see [ARTIFACTS.md](ARTIFACTS.md) for availability boundaries.
 
 ## Natural trajectories

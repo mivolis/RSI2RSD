@@ -18,11 +18,18 @@ instance 51934516 was destroyed. A round-trip-verified archive includes these
 plus provenance (7,276 files, 10,873,969,648 bytes). Its SHA256 is
 `130a4663aad72593adb6dba086d32edd567f6c9333f9e6707d7a1e69725f763e`.
 
-The 12-part raw archive is **uploading to a draft GitHub release**, tag
-`c4-pilot-20260921`, targeting `experiment/C4`. It is not yet a completed
-collaborator download. `RAW_ARCHIVE_INDEX.json`, `RAW_FILES_SHA256.json` and
-`SHA256SUMS` describe all parts and archived files. Do not try to extract an
-incomplete set. Availability will be updated after all assets are verified in UI.
+The full archive is **published and available** in the
+[Vast raw evidence pre-release](https://github.com/mivolis/RSI2RSD/releases/tag/c4-pilot-20260921),
+tag `c4-pilot-20260921`, created from `experiment/C4` commit
+`9be0f1aa8ef17d3a127f2f46e8a681cfce596e8f`.
+All 12 parts and three manifests are present; all 15 GitHub-displayed SHA256
+digests match the local verified evidence. Record: `VAST_RELEASE_VERIFICATION.json`.
+This compares GitHub's displayed digests; no second full download was performed.
+
+Download `.part00` through `.part11` plus `RAW_ARCHIVE_INDEX.json`,
+`RAW_FILES_SHA256.json` and `SHA256SUMS`. Verify the parts, concatenate them in
+numeric order to recreate `c4_vast_raw_20260921.tar.gz`, then extract in an empty
+directory. The release includes exact reconstruction commands.
 
 Local retained copy: experiment `remote/`; verified archive: `Delivery/raw/`.
 No private manuscript or credential is included. Public CIFAR input images are
