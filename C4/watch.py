@@ -29,10 +29,15 @@ def supervise(contract):
     def remote(cmd):
         return subprocess.run(ssh+[cmd],capture_output=True,text=True,timeout=90)
     def sync():
-        cmd=['rsync','-az','--exclude=*.tmp','--exclude=data/','--exclude=.venv/',
+        cmd=['rsync','-az','--partial-dir=.rsync-partial','--exclude=*.tmp','--exclude=data/','--exclude=.venv/',
              '--exclude=vendor/','--exclude=mplcache/','-e',shlex.join(ssh[:-1]),
              ssh[-1]+':/workspace/c4/',str(dest)+'/']
-        return subprocess.run(cmd,capture_output=True,text=True,timeout=300)
+        try:
+            return subprocess.run(cmd,capture_output=True,text=True,timeout=180)
+        except subprocess.TimeoutExpired:
+            # Slow transport is not an experiment failure. Completed files and
+            # partial-file blocks persist; the next pass resumes recovery.
+            return subprocess.CompletedProcess(cmd,124,'','sync pass time-limited; partial data retained')
     stopped=False;failures=0
     while True:
         now=time.time()

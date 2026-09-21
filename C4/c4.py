@@ -222,12 +222,18 @@ def reference_ids(pools, labels):
                      for c in range(100)], dtype=np.int64)
 
 
+def load_domain(data, domain):
+    arr=np.load(Path(data)/(domain+'.npy'),mmap_mode='r')
+    if arr.shape == (50000,32,32,3):return arr[40000:50000]
+    assert arr.shape == (10000,32,32,3), 'expected original or verified severity-5 extraction'
+    return arr
+
+
 def reference_images(data, ids):
     panels = []
     for domain in DOMAINS:
-        arr = np.load(Path(data)/(domain+'.npy'), mmap_mode='r')
-        assert arr.shape == (50000, 32, 32, 3)
-        panels.append(np.array(arr[40000 + ids], copy=True))
+        arr = load_domain(data,domain)
+        panels.append(np.array(arr[ids], copy=True))
     return np.concatenate(panels)
 
 
@@ -290,6 +296,7 @@ def run(args):
         cycles=args.cycles, severity=5, batch_size=64, lr=.001, momentum=.9,
         alpha=1-beta, beta=beta, feedback_vector={'lambda':args.gamma,'beta':beta},
         fixed_q_domains=DOMAINS, fixed_q_ids=reference_ids(pools,labels).tolist(),
+        input_layout='severity5_extract' if np.load(data/(DOMAINS[0]+'.npy'),mmap_mode='r').shape[0]==10000 else 'original_5_severities',
         tau=.9, trainable='all; eval mode, BN buffers frozen',
         weak='batchwise RandomHorizontalFlip(.5)', strong=repr(transform),
         split_seed=1000, domains=DOMAINS[:args.domains], max_batches=args.max_batches,
@@ -340,9 +347,7 @@ def run(args):
         block_clock = time.monotonic()
         cycle, index = divmod(t, len(domains))
         domain = domains[index]
-        images = np.load(data / (domain + '.npy'), mmap_mode='r')
-        assert images.shape == (50000, 32, 32, 3)
-        images = images[40000:50000]
+        images = load_domain(data,domain)
         base = out / f'block_{t:03d}'
         base.mkdir(exist_ok=True)
         attempt = 0
