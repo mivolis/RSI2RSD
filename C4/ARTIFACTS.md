@@ -44,7 +44,14 @@ including all 9,144 future raw batch records. The verification record is
 `SAPELO_MIRROR_VERIFICATION.json` in C4 (canonical local record:
 `Sapelo/mirror_verification.json`). Full local mirror: `Sapelo/job48416583/`.
 
-A separate full Sapelo archive with 9,632 files including provenance is being
-packaged and round-trip checked under `Delivery/sapelo_raw/`; it is not yet
-claimed uploaded to GitHub. Compact evidence also matches host manifests.
+A separate full Sapelo archive is **complete and round-trip verified locally**:
+9,632 files including provenance, 14,678,916,359 bytes. Its SHA256 is
+`0147e6a1a1c55799074e076ba6a3fa80691f86af65b7e18f080a1d60c95f1ad1`.
+All archive members were read back and rehashed. `SAPELO_RAW_ARCHIVE_INDEX.json`,
+`SAPELO_RAW_FILES_SHA256.json` and `SAPELO_SHA256SUMS` describe its contents.
+
+The 16 parts and three manifests are **uploading to a separate draft release**,
+tag `c4-sapelo-48416583-20260921`, targeting `experiment/C4`; they are not yet a
+completed collaborator download. Verified local archive: `Delivery/sapelo_raw/`.
+Compact evidence also matches host manifests.
 Cross-host repeats are not independent seeds.
