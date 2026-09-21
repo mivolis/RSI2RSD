@@ -1,9 +1,12 @@
 # C4 exploratory results — 2026-09-21
 
 **Completed:** paired natural pilot (30 blocks and 2,820 updates per arm), plus
-the two prespecified forks at horizons 20 and 94. One seed (101), severity 5,
-two corruption cycles. Raw-record checks passed on the GPU host. Full local
-recovery and the checksummed raw release are being finalized.
+the two prespecified forks at horizons 20, 94 and 1,410. One seed (101), severity 5,
+two natural corruption cycles. Sapelo job 48416583 completed with exit 0;
+all six host-specific fork verifications passed. All required Vast records
+were recovered and hash-verified before the paid instance was destroyed.
+Large GitHub release uploads and the local Sapelo bulk mirror remain in progress;
+see [ARTIFACTS.md](ARTIFACTS.md) for availability boundaries.
 
 ## Natural trajectories
 
@@ -73,14 +76,64 @@ replication, benchmark-superiority or general RSI claim is established here.
 The natural algorithm is a simplified, explicitly specified CTTA learner, not
 an implementation of full CoTTA.
 
+## Full-cycle extension on Sapelo
+
+The same two parents were continued for 1,410 scheduled updates on two L40S GPUs.
+Each extension took approximately 15.4–15.9 minutes for its three sequential
+continuations, running the two parents in parallel. The whole Slurm allocation,
+including setup, short replication and verification, took 25 minutes 35 seconds.
+Peak allocated/reserved memory was 2.093/2.800 GB per worker.
+H94 host-replication contrasts agreed with Vast within 4.77e-7; these are repeated
+computations of the same seed, not independent scientific replications.
+
+| Parent | Immediate CE effect | A_closed at H1410 | A_open at H1410 | I_feedback at H1410 |
+|---|---:|---:|---:|---:|
+| After block 5 | -0.045932 | +0.266292 | -0.050690 | +0.316982 |
+| After block 15 | +0.046558 | +0.069601 | -0.052072 | +0.121673 |
+
+Both prespecified full-cycle endpoints show a harmful feedback interaction on
+fixed-Q CE: accepting is worse than rejecting under endogenous supervision,
+but better under the rejection-generated replay tape. The block-5 update was
+initially beneficial on this panel, making it a candidate example of an
+immediate gain followed by a worse descendant at the specified horizon.
+
+This is **finite-horizon, intervention-specific evidence**, not persistent
+self-deterioration. Both contrasts change sign repeatedly between audit points.
+At H94, both interactions were negative. No endpoint or parent was selected
+after observing the result, and all intermediate signs are retained.
+
+| Parent / path | Fixed-Q CE initially | CE at H1410 | Error initially | Error at H1410 |
+|---|---:|---:|---:|---:|
+| Block 5 / reject closed | 2.990129 | 2.786371 | 65.73% | 55.27% |
+| Block 5 / accept closed | 2.944197 | 3.052662 | 64.67% | 56.73% |
+| Block 5 / accept replay | 2.944197 | 2.735680 | 64.67% | 51.33% |
+| Block 15 / reject closed | 2.830183 | 2.764742 | 55.53% | 50.47% |
+| Block 15 / accept closed | 2.876741 | 2.834343 | 56.40% | 52.13% |
+| Block 15 / accept replay | 2.876741 | 2.712670 | 56.40% | 53.07% |
+
+Error improves from its own starting point on every path. For block 15,
+accept/closed even has lower endpoint error than accept/replay despite higher CE.
+Thus the CE interaction must not be described as uniform degradation across
+metrics. Raw probabilities are retained to investigate this difference.
+
+Each full-cycle fork passed checks for 4,364 hashed files and 4,230 future batch
+records. Closed acceptance changed 9,252/6,892 pseudo-labels and 4,111/3,683 masks
+relative to the rejection tape (blocks 5/15); these are counts of repeated sample
+events, not independent observations. The intervention jointly fixes labels and
+selection masks; it does not isolate either channel individually.
+
+![Full-cycle fork after block 5](C4-5_after5_H1410.png)
+![Full-cycle fork after block 15](C4-5_after15_H1410.png)
+
 ## Next decision
 
-Preserve these mixed and negative findings. The user requested moving the
-planned full-cycle fork extension to two Sapelo zhai_p L40S GPUs; transfer and
-environment preparation are underway. Verify replay identity and keep host
-provenance separate. Do not tune the present runs to manufacture deterioration.
+The frozen pilot and its prespecified extension are complete; no GPU job remains.
+Preserve the mixed results. A useful next study would repeat this frozen setup
+with independent seeds and prespecified time summaries, then separate label and
+mask feedback. That is a subsequent research decision, not a result of this run.
+Do not fit a Jacobian or tune parameters to force the desired deterioration.
 
-Figures and machine-readable tables are in the accompanying compact results
-archive. Large raw artifacts will have an explicit checksummed release index;
-until that verification finishes, the remote-only remainder is not claimed to
-be safely delivered.
+The original pilot summaries are in `compact_results.tar.gz`; all six Sapelo
+fork summaries, full-cycle curves and verification records are in
+`sapelo_compact_results.tar.gz`. Bulk checkpoints/predictions are indexed in
+[ARTIFACTS.md](ARTIFACTS.md), with completed recovery distinguished from upload.

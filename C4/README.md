@@ -6,9 +6,10 @@ frozen, and confidence-filtered hard pseudo-labels supervise strong views.
 There is no source-weight restoration or outcome-label acceptance gate.
 
 Current measured outcomes: [RESULTS.md](RESULTS.md). The accompanying
-`compact_results.tar.gz` contains figures, tables and all four short-fork
-summaries. Large raw-artifact recovery is tracked separately and is not
-implicitly completed by this compact upload.
+`compact_results.tar.gz` contains the original pilot and four short-fork
+summaries; `sapelo_compact_results.tar.gz` adds all six Sapelo forks through
+H1410. [ARTIFACTS.md](ARTIFACTS.md) records bulk-data availability and checksums.
+All scheduled GPU work is complete; release uploads are a separate delivery step.
 
 ## Frozen meeting-pilot design
 
