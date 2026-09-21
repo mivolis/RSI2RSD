@@ -32,7 +32,7 @@ def report(root, verify=False):
                     import torch
                     import torch.nn.functional as F
                     with np.load(marker.parent/'fixed_q.npz') as q:
-                        y=torch.from_numpy(q['labels'])
+                        y=torch.as_tensor(q['labels'],dtype=torch.long)
                         for model in ['student','teacher','anchor']:
                             ce=float(F.cross_entropy(torch.from_numpy(q[model+'_logits']),y))
                             assert abs(ce-b['fixed_q'][model]['ce'])<1e-5

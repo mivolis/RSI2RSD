@@ -109,7 +109,7 @@ class Contracts(unittest.TestCase):
         self.assertEqual(got['selected'],8)
 
     def test_fixed_reference_panel_identity_and_purity(self):
-        labels=np.repeat(np.arange(100),100)
+        labels=np.repeat(np.arange(100,dtype=np.uint8),100)
         pools=c4.split_ids(labels);ids=c4.reference_ids(pools,labels)
         self.assertTrue(set(ids).issubset(set(pools['audit'])))
         for c in range(100):self.assertEqual(ids[c],pools['audit'][labels[pools['audit']]==c].min())
@@ -133,7 +133,7 @@ class Contracts(unittest.TestCase):
         import report
         with tempfile.TemporaryDirectory() as td:
             root=Path(td); data=root/'data';data.mkdir()
-            np.save(data/'labels.npy',np.tile(np.repeat(np.arange(100),100),5))
+            np.save(data/'labels.npy',np.tile(np.repeat(np.arange(100,dtype=np.uint8),100),5))
             for domain in c4.DOMAINS[:2]:
                 arr=np.lib.format.open_memmap(data/(domain+'.npy'),mode='w+',dtype='uint8',shape=(50000,32,32,3))
                 arr.flush();del arr

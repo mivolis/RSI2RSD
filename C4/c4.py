@@ -260,7 +260,7 @@ def fixed_audit(learner, panel, ids, labels, device, path, anchor_logits=None):
     mid=(ps+pt)/2
     js=(.5*(ps*(ps.clamp_min(1e-30).log()-mid.clamp_min(1e-30).log())).sum(1)
         +.5*(pt*(pt.clamp_min(1e-30).log()-mid.clamp_min(1e-30).log())).sum(1)).mean()
-    mix_ce=float(-mix[torch.arange(len(ys)),torch.from_numpy(ys)].clamp_min(1e-30).log().mean())
+    mix_ce=float(-mix[torch.arange(len(ys)),torch.as_tensor(ys,dtype=torch.long)].clamp_min(1e-30).log().mean())
     metrics['diagnostic_state']=[metrics['student']['ce'],mix_ce,float(js),float(mix.max(1).values.mean())]
     arrays['mixture_probs']=mix.numpy()
     atomic_npz(path,**arrays)

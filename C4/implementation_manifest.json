@@ -1,8 +1,8 @@
 {
-  "c4.py": "c35e13772bc6c19d6a02b7eddc084369c8240afa7c1256b7934a1c6ee1cc5363",
+  "c4.py": "b98eb393f9dcf33620ef533c0bc2d9f3d74f139f19b91657297ef78688f5fc0a",
   "test_forks.py": "233f32c27bb74c0c4c83c64130fda7ce190efc8e015dce6eb6099379edfb71b4",
   "setup_remote.sh": "816b832871075c2c6113a8333a8f0c8925c1e47708da05147e8133f4d0049599",
-  "test_c4.py": "1751b0ec431ea233eb0c0c114b13f32a6a5539f1021819591bbb5386ea2931f2",
+  "test_c4.py": "f85345b870dcfe68dac4755e1f6c4b30d75356ccbc1d2f0cf84df5aab934228f",
   "extract_severity5.py": "db55c29add55a5c9f099a5f955dd34fa95f396a584f92781d33aa2bdcab3328a",
   "requirements.txt": "f9ae57c02dbb759dc95521eb99079c64b9899986fe5b0123ae79f2b7fa2bece8",
   "lease_guard.py": "606672a2dec0515400f20bfb424613659960a516a4bcd7aa0017dc84ad8ee8a0",
@@ -12,7 +12,7 @@
   "forks.py": "0b4acb2302b000137df50a12dab96d9b73e8ab3050e48b78e0960390f04e33e1",
   "preflight_remote.sh": "eaedd87a8803b2f8006171885ae7d776560039c12d15c554bd87f94c8d02397c",
   "watch.py": "609248f5f10fe4398d981e9466a692dfb1da8fb3d6e61c3da12b495971e6c72c",
-  "report.py": "af837176bb93cd6d8c00e0a65edb086eb887a623b864af98cdcce7bb1a5d3599",
+  "report.py": "8e85b30c3acea225521039fcbc1fccf04ff5856337f4b2f64f0681f2699b3b9f",
   "scientific_status": "preflight pending; software tests only",
   "public_data_archive_md5": "11f0ed0f1191edbf9fa23466ae6021d3",
   "severity5_transport_sha256": "f0831721a7fd47962587fd5b238ece66acc84e4555bba5681a628475560ddb88"
