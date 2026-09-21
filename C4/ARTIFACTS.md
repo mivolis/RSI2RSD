@@ -38,6 +38,13 @@ Logs: `logs/slurm-48416583.out`, `.err`; scheduler record `logs/sacct-48416583.t
 Job completed, exit `0:0`. All six fork verifications passed. Each H1410 parent
 has 4,364 hashed files and 4,230 raw future records. Full states, logits, target
 probabilities, masks, sample IDs and paired randomness are retained remotely.
-The local bulk mirror is **in progress**; it is not yet claimed hash-complete or
-fully uploaded to GitHub. Compact evidence is independently checked against the
-host completion manifests. Cross-host repeats are not independent seeds.
+The final local bulk mirror is **complete and hash-verified** as of September 21,
+2026, 14:27 EDT. All six completion manifests passed (9,588 referenced files),
+including all 9,144 future raw batch records. The verification record is
+`SAPELO_MIRROR_VERIFICATION.json` in C4 (canonical local record:
+`Sapelo/mirror_verification.json`). Full local mirror: `Sapelo/job48416583/`.
+
+A separate full Sapelo archive with 9,632 files including provenance is being
+packaged and round-trip checked under `Delivery/sapelo_raw/`; it is not yet
+claimed uploaded to GitHub. Compact evidence also matches host manifests.
+Cross-host repeats are not independent seeds.

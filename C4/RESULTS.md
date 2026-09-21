@@ -5,7 +5,8 @@ the two prespecified forks at horizons 20, 94 and 1,410. One seed (101), severit
 two natural corruption cycles. Sapelo job 48416583 completed with exit 0;
 all six host-specific fork verifications passed. All required Vast records
 were recovered and hash-verified before the paid instance was destroyed.
-Large GitHub release uploads and the local Sapelo bulk mirror remain in progress;
+The full Sapelo mirror is now hash-verified; large GitHub uploads and
+Sapelo archive packaging remain in progress;
 see [ARTIFACTS.md](ARTIFACTS.md) for availability boundaries.
 
 ## Natural trajectories
