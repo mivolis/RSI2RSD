@@ -64,5 +64,12 @@ class ForkContracts(unittest.TestCase):
             self.assertTrue(all(x['max_abs_logit_difference']==0 for x in identity))
             for name,h in json.loads((out/'complete.json').read_text())['files'].items():
                 self.assertEqual(c4.filehash(out/name),h)
+            import verify_forks
+            verified=verify_forks.verify(out)
+            self.assertEqual(verified['raw_future_records'],9)
+            self.assertEqual(verified['pseudo_label_switches'],0)
+            # Detect altered retained evidence rather than trusting aggregate JSON.
+            (out/'comparison.json').write_text('[]')
+            with self.assertRaises(AssertionError):verify_forks.verify(out)
 
 if __name__=='__main__':unittest.main(verbosity=2)

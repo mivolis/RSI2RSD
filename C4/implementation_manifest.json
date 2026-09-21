@@ -1,6 +1,6 @@
 {
   "c4.py": "b98eb393f9dcf33620ef533c0bc2d9f3d74f139f19b91657297ef78688f5fc0a",
-  "test_forks.py": "233f32c27bb74c0c4c83c64130fda7ce190efc8e015dce6eb6099379edfb71b4",
+  "test_forks.py": "e738b552c36658bf734e0b12a038d4236974c285f9adb9b65ea9c05fb56ff41c",
   "setup_remote.sh": "816b832871075c2c6113a8333a8f0c8925c1e47708da05147e8133f4d0049599",
   "test_c4.py": "f85345b870dcfe68dac4755e1f6c4b30d75356ccbc1d2f0cf84df5aab934228f",
   "extract_severity5.py": "db55c29add55a5c9f099a5f955dd34fa95f396a584f92781d33aa2bdcab3328a",
@@ -13,7 +13,10 @@
   "preflight_remote.sh": "eaedd87a8803b2f8006171885ae7d776560039c12d15c554bd87f94c8d02397c",
   "watch.py": "609248f5f10fe4398d981e9466a692dfb1da8fb3d6e61c3da12b495971e6c72c",
   "report.py": "8e85b30c3acea225521039fcbc1fccf04ff5856337f4b2f64f0681f2699b3b9f",
-  "scientific_status": "preflight pending; software tests only",
+  "scientific_status": "Stage 0 verified; Stage 1 pilot running; exploratory evidence only",
   "public_data_archive_md5": "11f0ed0f1191edbf9fa23466ae6021d3",
-  "severity5_transport_sha256": "f0831721a7fd47962587fd5b238ece66acc84e4555bba5681a628475560ddb88"
+  "severity5_transport_sha256": "f0831721a7fd47962587fd5b238ece66acc84e4555bba5681a628475560ddb88",
+  "verify_forks.py": "f3a243b629fcc4ad6c15206ae552cc2288e006b5f5784bc4d803c2ee64c37f7f",
+  "run_forks.sh": "36413e322fba605d1c837dee9caf2b1abbcb18738859574aae9ed3ba7c7bb124",
+  "README.md": "0d03edee970647af4b774c3e19fd8319d6940fe9c891c4cd4134a76c3a5d27c3"
 }
