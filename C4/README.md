@@ -5,6 +5,11 @@ This is the executable implementation of the approved C4 experiment. It is
 frozen, and confidence-filtered hard pseudo-labels supervise strong views.
 There is no source-weight restoration or outcome-label acceptance gate.
 
+Current measured outcomes: [RESULTS.md](RESULTS.md). The accompanying
+`compact_results.tar.gz` contains figures, tables and all four short-fork
+summaries. Large raw-artifact recovery is tracked separately and is not
+implicitly completed by this compact upload.
+
 ## Frozen meeting-pilot design
 
 - Public CIFAR-100-C, severity 5, all 15 corruptions in the order in `c4.py`.
