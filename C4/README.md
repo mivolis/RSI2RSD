@@ -1,5 +1,8 @@
 # C4: exploratory self-referential continual adaptation
 
+For the September 2026 **18-cell gamma x seed rerun** (`gamma = 0/0.5/1`, `beta = .001/.01`, seeds `202/303/404`), follow the [fresh-clone setup and exact run commands](C4_20260922_README.md#re-run-the-gamma-x-seed-experiment-from-github). The `Run and verify` section below describes the earlier seed-101 meeting pilot and its `/workspace/c4` wrappers.
+
+
 This is the executable implementation of the approved C4 experiment. It is
 **not unmodified CoTTA**: all student parameters are trainable, BN buffers are
 frozen, and confidence-filtered hard pseudo-labels supervise strong views.
