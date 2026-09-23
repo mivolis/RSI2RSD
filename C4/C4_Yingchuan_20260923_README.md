@@ -1,6 +1,6 @@
 # C4 Yingchuan sequential sweep (2026-09-23)
 
-This directory holds Yingchuan's assigned 40 exploratory cells from `Split (1).pdf`. Run lambda `0.4` first, then `0.7`; at each lambda, beta goes `0.0005` -> `0.001` -> `0.0015` -> `0.002`. Each pair has seeds `202, 303, 404, 505, 606`. Finish and audit all five seeds, then issue one English PDF **before** starting the next beta. Do not confuse `0.0005` with `0.005`. Checkpoint 1 already has Sapelo array **48468709**; do not submit it again.
+This directory holds Yingchuan's assigned 40 exploratory cells from `Split (1).pdf`. Run lambda `0.4` first, then `0.7`; at each lambda, beta goes `0.0005` -> `0.001` -> `0.0015` -> `0.002`. Each pair has seeds `202, 303, 404, 505, 606`. Finish and audit all five seeds, then issue one English PDF **before** starting the next beta. Do not confuse `0.0005` with `0.005`. Checkpoints 1 and 2 already have Sapelo arrays **48468709** and **48481042**; do not submit them again. Their [first](C4_Yingchuan_Pair01_README.md) and [second](C4_Yingchuan_Pair02_README.md) report packages are available here.
 
 The frozen C4 learner and fork code are in `code/`. Only the `--gamma` CLI choices in `c4.py` and `dynamics_v1/extend_trajectory.py` were extended to accept `0.4` and `0.7`. `code/run_pair_cell.py` orchestrates one seed: one-cycle parent, block-5/15 H94/H1410 forks, H20 dynamics, then the remaining 30 trajectory blocks. Every component has a separate status and log; the worker's exit code alone is not a scientific completion certificate.
 
