@@ -1,5 +1,12 @@
 # C4 artifact availability — 2026-09-21
 
+## 2026-09-22 complete exploratory matrix
+
+[Full 32-page English report](C4_Results_Full_2026-09-22_EN.pdf), [compact code/tables/evidence](C4_20260922_compact.tar.gz), [SHA256 package manifest](C4_20260922_PACKAGE_MANIFEST.json), and [delivery guide](C4_20260922_README.md) are available on experiment/C4. Commit: 4493a66d4bb7811bd9fcd0ebe2148577cacae822. The compact archive has 120 round-trip-checked members and SHA256 4a6a9abeedc91b8ae8be4fd2e27aba8da3b5af8bb2d56e5a484a9a432594b500. It includes the seed replication, parameter-grid failure traces, submitted code, all final C4-1..7 tables, verification records, and Slurm accounting. Canonical bulk checkpoints/logits remain on Sapelo under /scratch/yz54720/RSI2RSD/C4/. Twelve cells completed three-cycle/H20 outputs; six parent cells failed numerically. No system Jacobian or phase boundary was identified.
+
+The sections below describe the earlier 2026-09-21 pilot and its two separately published raw releases.
+
+
 Repository branch: `experiment/C4`; all project files under `C4/`. Main is unchanged.
 
 ## Compact evidence
