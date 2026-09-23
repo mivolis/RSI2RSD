@@ -1,5 +1,12 @@
 # C4 exploratory results — 2026-09-21
 
+## 2026-09-22 complete gamma-by-seed study
+
+[Full English PDF](C4_Results_Full_2026-09-22_EN.pdf), [120-member compact code/results archive](C4_20260922_compact.tar.gz), [SHA256 manifest](C4_20260922_PACKAGE_MANIFEST.json), and [delivery guide](C4_20260922_README.md) are in this branch. The six gamma points crossed with seeds 202/303/404 give 18 terminal cells: 12 verified three-cycle/H20 cells and six nonfinite parent failures with unavailable downstream quantities. Across the completed cells, proxy CE decreases on 1,080/1,080 scheduled probes while labelled local CE increases on 465/1,080. Mean same-domain classification error improves in 12/12 cells, whereas mean same-domain CE worsens in 7/12. At H1410, 9/24 correlated parent nodes have harmful closed acceptance and 4/24 have positive feedback interaction; signs are mixed. Finite F_gamma responses do not identify a closed four-coordinate Jacobian or phase boundary. These exploratory results do not establish persistent self-deterioration. The 2026-09-21 seed-101 pilot remains below as separate discovery evidence; confirmation outcomes remain untouched. See [artifact availability](ARTIFACTS.md) for canonical raw paths and releases.
+
+The remainder of this file documents the earlier seed-101 pilot.
+
+
 **Completed:** paired natural pilot (30 blocks and 2,820 updates per arm), plus
 the two prespecified forks at horizons 20, 94 and 1,410. One seed (101), severity 5,
 two natural corruption cycles. Sapelo job 48416583 completed with exit 0;
