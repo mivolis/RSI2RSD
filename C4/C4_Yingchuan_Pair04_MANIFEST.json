@@ -1,0 +1,28 @@
+{
+  "pair": "l04_b0002",
+  "lambda": "0.4",
+  "beta": "0.002",
+  "array": "48487700",
+  "seeds": [
+    202,
+    303,
+    404,
+    505,
+    606
+  ],
+  "branch": "experiment/C4",
+  "files": {
+    "C4_Yingchuan_Pair04_Evidence.tar.gz": {
+      "bytes": 3905831,
+      "sha256": "ff97493856927fdccaa921a03778e801a1f97db7f66bd0311b4abaa7a7a76a61"
+    },
+    "C4_Yingchuan_Pair04_l04_b0002_EN.pdf": {
+      "bytes": 28857,
+      "sha256": "8909dfc8513b10b9d7ab41710f4e8a8e7a8c45892c9291e4e294fc736b7e5f4b"
+    }
+  },
+  "archive_file_members": 922,
+  "archive_member_mismatches": 0,
+  "scientific_status": "five terminal, fully covered exploratory cells; Jacobian not identified",
+  "peer_glance": "requested, not confirmed"
+}
