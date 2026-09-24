@@ -1,0 +1,20 @@
+{
+  "pair": "l07_b00015",
+  "lambda": "0.7",
+  "beta": "0.0015",
+  "seeds": [
+    202,
+    303,
+    404,
+    505,
+    606
+  ],
+  "parents": {
+    "202": "/scratch/yz54720/RSI2RSD/C4/parent15_o_20260924/results/l07_b00015/seed202_job48515079/parent",
+    "303": "/scratch/yz54720/RSI2RSD/C4/parent15_o_20260924/results/l07_b00015/seed303_job48515225/parent",
+    "404": "/scratch/yz54720/RSI2RSD/C4/parent15_o_20260924/results/l07_b00015/seed404_job48515427/parent",
+    "505": "/scratch/yz54720/RSI2RSD/C4/parent15_o_20260924/results/l07_b00015/seed505_job48515573/parent",
+    "606": "/scratch/yz54720/RSI2RSD/C4/parent15_o_20260924/results/l07_b00015/seed606_job48515078/parent"
+  },
+  "source": "new one-cycle parent-15 runs; Slurm array 48515078, all five COMPLETED 0:0"
+}
