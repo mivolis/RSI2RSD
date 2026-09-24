@@ -1,0 +1,20 @@
+{
+  "pair": "l07_b0001",
+  "lambda": "0.7",
+  "beta": "0.001",
+  "seeds": [
+    202,
+    303,
+    404,
+    505,
+    606
+  ],
+  "parents": {
+    "202": "/scratch/yz54720/RSI2RSD/C4/sweep_yingchuan_20260923/results/l07_b0001/seed202_job48508656/parent",
+    "303": "/scratch/yz54720/RSI2RSD/C4/sweep_yingchuan_20260923/results/l07_b0001/seed303_job48508657/parent",
+    "404": "/scratch/yz54720/RSI2RSD/C4/sweep_yingchuan_20260923/results/l07_b0001/seed404_job48508658/parent",
+    "505": "/scratch/yz54720/RSI2RSD/C4/sweep_yingchuan_20260923/results/l07_b0001/seed505_job48509898/parent",
+    "606": "/scratch/yz54720/RSI2RSD/C4/sweep_yingchuan_20260923/results/l07_b0001/seed606_job48508655/parent"
+  },
+  "source": "archived one-cycle parents from stopped three-cycle sweep"
+}
