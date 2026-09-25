@@ -1,0 +1,37 @@
+{
+  "pair": "l07_b0002",
+  "beta": "0.002",
+  "lambda": "0.7",
+  "parent_job": "48515961",
+  "analysis_job": "48516134",
+  "files": {
+    "C4_Parent15_O_l07_b0002_EN.pdf": {
+      "bytes": 801994,
+      "sha256": "afff59e0083a36f2d1620e5cb1c203b22c85b5e8fc408025ca24703facde44ef"
+    },
+    "C4_Parent15_O_l07_b0002_O_blocks.csv": {
+      "bytes": 35958,
+      "sha256": "67ba8f14b36dee1db91eba4ca14f9c09cb92f6b9074375c661cd0c759148823d"
+    },
+    "C4_Parent15_O_l07_b0002_O_cells.csv": {
+      "bytes": 2745,
+      "sha256": "f1e705b26141880eefd6e7fd5c51b49b3fc8ec9ea41a59720c8040dea6723608"
+    },
+    "C4_Parent15_O_l07_b0002_O_steps.csv": {
+      "bytes": 3211358,
+      "sha256": "5d089bd062a5a12490b0861c2cb2ba0ba4e4b93637c1d255e1a2bc6bc4c9bfd8"
+    },
+    "C4_Parent15_O_l07_b0002_README.md": {
+      "bytes": 1454,
+      "sha256": "93ed9cb3dd9e7185513bc53d694a52d025ca32115be6486035599588614dfd47"
+    },
+    "C4_Parent15_O_l07_b0002_RESULTS.md": {
+      "bytes": 953,
+      "sha256": "db68543b5343a936792156b04bd0bbe54bfa47d92e5392eedae67dff2bf074aa"
+    },
+    "C4_Parent15_O_l07_b0002_source_manifest.json": {
+      "bytes": 769,
+      "sha256": "a46ef3eeb6a51cdc1d5929d1e5596406d2f241be289ea669f416006b97593248"
+    }
+  }
+}

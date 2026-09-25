@@ -1,0 +1,92 @@
+{
+  "format": "Concatenate parts in listed order to restore tar.gz",
+  "parts": [
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part00",
+      "bytes": 943718400,
+      "sha256": "53360df05fd101bcb3e09b42bb908550353d8fc6e7792ad580de1bd1ab6e989e"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part01",
+      "bytes": 943718400,
+      "sha256": "6b02ca1ccc45361e909a2a0ae2e37dc1b3dec18619d17c4e337fb3f2a5bce1fd"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part02",
+      "bytes": 943718400,
+      "sha256": "35856eb38f7377257e2d7090acf47ef5769da8e5b4af1e0d0319dd2ea4e73809"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part03",
+      "bytes": 943718400,
+      "sha256": "1644c254c521c76ec2977802c4e850222d3161e4ea8331f18d34eb2b9d8e62ac"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part04",
+      "bytes": 943718400,
+      "sha256": "eedda2ea47d63af118dd262b589d99ef19c47a9a4970999536ed3fb24986ab1a"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part05",
+      "bytes": 943718400,
+      "sha256": "6459c6054bc3a5e7f35662c606a8d7fb5c8a9142cf79fc40c7c6db9dbb15f15d"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part06",
+      "bytes": 943718400,
+      "sha256": "bacbf6de32cdeda84255b41a25d41cce2e328d4ff840aaba59b15703bafd7171"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part07",
+      "bytes": 943718400,
+      "sha256": "fe1ee14a50f6a4e40c6873768fb4e292141b269c63ccfde02ce6bafc648e8011"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part08",
+      "bytes": 943718400,
+      "sha256": "586cc9e01442b17ef4b4bfd8dbb2298c8a3423dc4fba8d9d38e96012166cd198"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part09",
+      "bytes": 943718400,
+      "sha256": "863773c12cdab5c7ac165963135f663add71de73850426ae09d5c9c91b7a7554"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part10",
+      "bytes": 943718400,
+      "sha256": "18689eaca258f7db4ffe15ae77497db10e894080d8591096e82fb0214e96d603"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part11",
+      "bytes": 943718400,
+      "sha256": "b6a37aacd75595c8cc0668f226efad1fcbb8ffbd0da044d140829dff6af75e84"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part12",
+      "bytes": 943718400,
+      "sha256": "a090326d2f259002cb227466d40478bb44d6ca70440512793fac7a02ead62272"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part13",
+      "bytes": 943718400,
+      "sha256": "205e196355c0c8e4f56dde14e69e84270579ab4c7ad9fa799f89991ee3166527"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part14",
+      "bytes": 943718400,
+      "sha256": "30873adf8ee168528ee9c5de5d81255e26ce9df8f7636c5e36a5fd2efbe0e331"
+    },
+    {
+      "name": "c4_sapelo_job48416583_raw.tar.gz.part15",
+      "bytes": 523140359,
+      "sha256": "027a95c3ca69fabae19dc30f55a186636518875a2d82f6f55833860f0f2f7db9"
+    }
+  ],
+  "archive_bytes": 14678916359,
+  "archive_sha256": "0147e6a1a1c55799074e076ba6a3fa80691f86af65b7e18f080a1d60c95f1ad1",
+  "original_files": 9632,
+  "roundtrip_verified": true,
+  "job": "48416583",
+  "origin": "/scratch/yz54720/RSI2RSD/C4/migration_results/job48416583/",
+  "scope": "All six Sapelo forks including raw predictions, supervision, masks, schedules, full checkpoints and provenance; no credentials/private manuscript."
+}

@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "job": "48416583",
+  "runs": [
+    {
+      "run": "after5_h20",
+      "hashed_files": 98,
+      "raw_future_records": 60
+    },
+    {
+      "run": "after5_h94",
+      "hashed_files": 332,
+      "raw_future_records": 282
+    },
+    {
+      "run": "after5_h1410",
+      "hashed_files": 4364,
+      "raw_future_records": 4230
+    },
+    {
+      "run": "after15_h20",
+      "hashed_files": 98,
+      "raw_future_records": 60
+    },
+    {
+      "run": "after15_h94",
+      "hashed_files": 332,
+      "raw_future_records": 282
+    },
+    {
+      "run": "after15_h1410",
+      "hashed_files": 4364,
+      "raw_future_records": 4230
+    }
+  ],
+  "checked_at_utc": "2026-09-21T18:27:48.002331+00:00",
+  "source": "/scratch/yz54720/RSI2RSD/C4/migration_results/job48416583/",
+  "scope": "All six host completion manifests and complete raw step counts; host verification records retained."
+}

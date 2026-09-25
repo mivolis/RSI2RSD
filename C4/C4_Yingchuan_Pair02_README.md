@@ -1,0 +1,9 @@
+# C4 Yingchuan checkpoint 2: lambda=0.4, beta=0.001
+
+Five prespecified exploratory seeds (202/303/404/505/606) completed Sapelo array 48481042. Each has 45 blocks, four verified forks and two finite 132/132 H20 analyses; all 907 compact evidence members passed local SHA256 verification. The requested second-person check of launch values was not confirmed and is not represented as completed. The confirmation audit was not accessed.
+
+- [English PDF](C4_Yingchuan_Pair02_l04_b0001_EN.pdf): C4-1 through C4-7 with mixed findings and explicit missing/identifiability limits.
+- [Compact evidence and report source](C4_Yingchuan_Pair02_Evidence.tar.gz): verified audit, complete per-block CSVs, report source, logs and derivation inputs. Raw checkpoints, logits and step tapes remain on Sapelo at `/scratch/yz54720/RSI2RSD/C4/sweep_yingchuan_20260923/results/l04_b0001/`.
+- [SHA256 manifest](C4_Yingchuan_Pair02_MANIFEST.json): checksums for the two downloadable artifacts. All 926 regular archive members were individually compared with their local sources.
+
+Descriptive readout: visit-3 minus visit-1 same-domain CE worsens in 4/5 seeds (mean +0.090), while classification error improves by 3.94 percentage points on average. At H1410, 5/10 correlated parent nodes have harmful closed acceptance and 7/10 have positive feedback interaction. These signs are mixed and do not establish sustained recursive deterioration, a closed Jacobian or a phase transition. The H94 and H1410 forks agree at their latest common scored checkpoint H93; H94 is not separately scored in the long fork.

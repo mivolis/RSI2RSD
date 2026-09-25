@@ -1,0 +1,118 @@
+{
+  "branch": "experiment/C4",
+  "path": "C4/",
+  "files": {
+    "C4_Parent15_O_20260924_README.md": {
+      "bytes": 2675,
+      "sha256": "4b4f4f6871059da1f2752e0c9be6ba054c72832bb78a240248cccc278cd1d9cc"
+    },
+    "C4_Parent15_O_Code_20260924.tar.gz": {
+      "bytes": 9253,
+      "sha256": "7f078cdff7d1e8c2350a1fddb1666344484f30f0a431fc30f0f28d04a0b0ea72"
+    },
+    "C4_Parent15_O_l07_b00005_EN.pdf": {
+      "bytes": 740820,
+      "sha256": "8a52d2e3c457cf8009ccaa1e842fb3146556cafabf70feb67077f070c13faf64"
+    },
+    "C4_Parent15_O_l07_b00005_O_blocks.csv": {
+      "bytes": 36065,
+      "sha256": "7a3bda8ee253c051a329f02feea0058cc6f8a6468c5e858dd0d37d3edc555046"
+    },
+    "C4_Parent15_O_l07_b00005_O_cells.csv": {
+      "bytes": 2776,
+      "sha256": "2254a6bf613693330a06af7a10668a3808f43f4c85edf2729fba2f920a06025c"
+    },
+    "C4_Parent15_O_l07_b00005_O_steps.csv": {
+      "bytes": 3223421,
+      "sha256": "3c22786a61339152cfbc9f6331c7479c2ac6209142f782c82a813c1afb707505"
+    },
+    "C4_Parent15_O_l07_b00005_source_manifest.json": {
+      "bytes": 784,
+      "sha256": "ebd877997f87c236effed48ccb871877eab1eb111837ccfb873d544660ac0ee8"
+    },
+    "C4_Parent15_O_l07_b00015_EN.pdf": {
+      "bytes": 764189,
+      "sha256": "29632d3237135ee8a71557d5afdf7a5c76b31a5b83712c74d141fec111a19810"
+    },
+    "C4_Parent15_O_l07_b00015_MANIFEST.json": {
+      "bytes": 1246,
+      "sha256": "764dcbb05876d3afa56d6e23b1728f0bd6a7b9c46189e6f53f6627a77dc6524a"
+    },
+    "C4_Parent15_O_l07_b00015_O_blocks.csv": {
+      "bytes": 35966,
+      "sha256": "860fbe50946c52a412e0ba352254bbe4b86331f8e6473f45dde4730df31c6785"
+    },
+    "C4_Parent15_O_l07_b00015_O_cells.csv": {
+      "bytes": 2762,
+      "sha256": "3cc3bb0f12dde7273abced25d91f3c9766e85753cdfe546dd4c3a22c5e86f126"
+    },
+    "C4_Parent15_O_l07_b00015_O_steps.csv": {
+      "bytes": 3225803,
+      "sha256": "397f756bf071c857ba4bfa5e7d626e1835603e856a66d6817c5f4c09a7a2993f"
+    },
+    "C4_Parent15_O_l07_b00015_README.md": {
+      "bytes": 1407,
+      "sha256": "b27ee7244d5a922b8d3112d4f09466dbe732d239b32e80a04b515af9e657d335"
+    },
+    "C4_Parent15_O_l07_b00015_RESULTS.md": {
+      "bytes": 955,
+      "sha256": "89b011765dd25f8a882da2cb00daa50bbb25c21352270f1e1e7bdcd2a671ed70"
+    },
+    "C4_Parent15_O_l07_b00015_source_manifest.json": {
+      "bytes": 776,
+      "sha256": "d26979cec4fb05684d35e006231ffa10620e6103515a547d319c18d810d3395e"
+    },
+    "C4_Parent15_O_l07_b0001_EN.pdf": {
+      "bytes": 771434,
+      "sha256": "10fdb535a70c48da3d7ad509813c81e0f1809cbc73fe1f80ae57f4a14566f172"
+    },
+    "C4_Parent15_O_l07_b0001_O_blocks.csv": {
+      "bytes": 35989,
+      "sha256": "91f2a82d046920984e789b114ade983d0a8bf58e2da1264aa299c2eab7507abf"
+    },
+    "C4_Parent15_O_l07_b0001_O_cells.csv": {
+      "bytes": 2769,
+      "sha256": "480d88df2bf50bbc03d34f175cc9ed49c9771e45c01379bbc0acc65a5f95192d"
+    },
+    "C4_Parent15_O_l07_b0001_O_steps.csv": {
+      "bytes": 3211998,
+      "sha256": "5e3a9be70cb751be35e13e14161cf5adb2c90ddce4f47838db0cd8dbd4f8c2dd"
+    },
+    "C4_Parent15_O_l07_b0001_source_manifest.json": {
+      "bytes": 777,
+      "sha256": "1903a0911bea37ee4469e5f679b6de31e5057ad7cb606f607914a668eda01801"
+    },
+    "C4_Parent15_O_l07_b0002_EN.pdf": {
+      "bytes": 801994,
+      "sha256": "afff59e0083a36f2d1620e5cb1c203b22c85b5e8fc408025ca24703facde44ef"
+    },
+    "C4_Parent15_O_l07_b0002_MANIFEST.json": {
+      "bytes": 1237,
+      "sha256": "d4d34874000dbb2566b8c25f5dd6f80e2827e117fcae06daec8ed533be0e53c9"
+    },
+    "C4_Parent15_O_l07_b0002_O_blocks.csv": {
+      "bytes": 35958,
+      "sha256": "67ba8f14b36dee1db91eba4ca14f9c09cb92f6b9074375c661cd0c759148823d"
+    },
+    "C4_Parent15_O_l07_b0002_O_cells.csv": {
+      "bytes": 2745,
+      "sha256": "f1e705b26141880eefd6e7fd5c51b49b3fc8ec9ea41a59720c8040dea6723608"
+    },
+    "C4_Parent15_O_l07_b0002_O_steps.csv": {
+      "bytes": 3211358,
+      "sha256": "5d089bd062a5a12490b0861c2cb2ba0ba4e4b93637c1d255e1a2bc6bc4c9bfd8"
+    },
+    "C4_Parent15_O_l07_b0002_README.md": {
+      "bytes": 1454,
+      "sha256": "93ed9cb3dd9e7185513bc53d694a52d025ca32115be6486035599588614dfd47"
+    },
+    "C4_Parent15_O_l07_b0002_RESULTS.md": {
+      "bytes": 953,
+      "sha256": "db68543b5343a936792156b04bd0bbe54bfa47d92e5392eedae67dff2bf074aa"
+    },
+    "C4_Parent15_O_l07_b0002_source_manifest.json": {
+      "bytes": 769,
+      "sha256": "a46ef3eeb6a51cdc1d5929d1e5596406d2f241be289ea669f416006b97593248"
+    }
+  }
+}

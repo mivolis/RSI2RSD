@@ -1,0 +1,5 @@
+numpy==1.26.4
+matplotlib==3.9.4
+robustbench==1.1.1
+setuptools==80.10.2
+autoattack @ git+https://github.com/fra31/auto-attack.git@a39220048b3c9f2cca9a4d3a54604793c68eca7e

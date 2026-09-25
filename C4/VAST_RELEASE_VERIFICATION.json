@@ -1,0 +1,84 @@
+{
+  "release_url": "https://github.com/mivolis/RSI2RSD/releases/tag/c4-pilot-20260921",
+  "status": "published_pre_release",
+  "tag_commit": "9be0f1aa8ef17d3a127f2f46e8a681cfce596e8f",
+  "verified_at_utc": "2026-09-21T19:10:30.768065+00:00",
+  "method": "All 15 published assets observed in GitHub UI; displayed SHA256 digests compared to local verified archive index and locally hashed manifests. No second download performed.",
+  "assets": [
+    {
+      "name": "c4_vast_raw_20260921.tar.gz.part00",
+      "github_displayed_sha256": "a92e820b7f0f84a6a2cc3cfd82f98c608e6636451bbaead37ef470e4cf7cd536",
+      "matches_local": true
+    },
+    {
+      "name": "c4_vast_raw_20260921.tar.gz.part01",
+      "github_displayed_sha256": "cb5978b05ec8947cd73d8337656f32762ca21b8f3512bb573c1e1c18ef875b29",
+      "matches_local": true
+    },
+    {
+      "name": "c4_vast_raw_20260921.tar.gz.part02",
+      "github_displayed_sha256": "9d387a965b1d345b5ac05aac7b5741a86248a136d7e9e9eae3edac7c46af96b9",
+      "matches_local": true
+    },
+    {
+      "name": "c4_vast_raw_20260921.tar.gz.part03",
+      "github_displayed_sha256": "987f14ee22c6ff3c8ca00ba096722dff64c265628780ca5d0290cfdf9309f9cd",
+      "matches_local": true
+    },
+    {
+      "name": "c4_vast_raw_20260921.tar.gz.part04",
+      "github_displayed_sha256": "12934b0449e9416b9099de7904b12944766d8e02fc3cf82e040e5f3b8d18c408",
+      "matches_local": true
+    },
+    {
+      "name": "c4_vast_raw_20260921.tar.gz.part05",
+      "github_displayed_sha256": "42ac355e52d0479de6f3594dade8294b5e5fbc5301e95c01b0e8fbf3daa63df6",
+      "matches_local": true
+    },
+    {
+      "name": "c4_vast_raw_20260921.tar.gz.part06",
+      "github_displayed_sha256": "b02a8ee5b3fca36ced99509e39389a77a3b2e7b078c297961a1d7a46675eae30",
+      "matches_local": true
+    },
+    {
+      "name": "c4_vast_raw_20260921.tar.gz.part07",
+      "github_displayed_sha256": "ff6c9ac6f22ed05869bcd72681e6505827f1ba86b4ac3bf9569eb6fe6f4023e4",
+      "matches_local": true
+    },
+    {
+      "name": "c4_vast_raw_20260921.tar.gz.part08",
+      "github_displayed_sha256": "b2fd0788d0a24324f599a6eea64b79269d204090ee36f52152f7466114fa4209",
+      "matches_local": true
+    },
+    {
+      "name": "c4_vast_raw_20260921.tar.gz.part09",
+      "github_displayed_sha256": "ef0430e294a1d3efa83476a46acba57ecd43f3b050e9c65894aed880d1e20816",
+      "matches_local": true
+    },
+    {
+      "name": "c4_vast_raw_20260921.tar.gz.part10",
+      "github_displayed_sha256": "e9e892def66f64cefaf44cfba1a238cec76455b837cbf79cfd37f0706bdf984b",
+      "matches_local": true
+    },
+    {
+      "name": "c4_vast_raw_20260921.tar.gz.part11",
+      "github_displayed_sha256": "bf3ef45963d259c69c2da5bcbc9f703b4f95f5c155b1cc98c2fd8e207e1c0e14",
+      "matches_local": true
+    },
+    {
+      "name": "RAW_ARCHIVE_INDEX.json",
+      "github_displayed_sha256": "4f4145159b834c397cdda9426bcb3cc45433db4157b942f8f4cc18c70467d077",
+      "matches_local": true
+    },
+    {
+      "name": "RAW_FILES_SHA256.json",
+      "github_displayed_sha256": "613fec262af0937ed78def6a46cc5e3cd2dffe00e86b91cde6c64900ae05a89a",
+      "matches_local": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "github_displayed_sha256": "4eae66e4d53c33821920d18403282b2b4cd42b7ea821f2167b8c90be344b10a4",
+      "matches_local": true
+    }
+  ]
+}
